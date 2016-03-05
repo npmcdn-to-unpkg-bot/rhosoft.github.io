@@ -53,7 +53,8 @@ body.loaded .header.title:after {
   }
 
 .logo {
-  width: 400px;
+  width: 90%;
+  max-width: 400px;
   padding: 1em 0;
   margin: 0 auto;
 }
@@ -167,7 +168,7 @@ body.loaded .header.title:after {
   #blog .card .date_wrapper {
     background: #3f51b5;
     height: 200px;
-    width: 200px;
+    min-width: 200px;
     position: relative;
   }
     #blog .card .date {
