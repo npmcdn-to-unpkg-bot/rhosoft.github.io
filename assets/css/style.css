@@ -269,6 +269,10 @@ footer.page-footer .footer-copyright {
     flex-direction: column;
   }
 
+  .content {
+    background: #ABABAB;
+  }
+
   .tab_wrapper {
     padding: 0!important;
   }
