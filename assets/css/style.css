@@ -5,7 +5,7 @@ body {
   background-size: cover;
 }
 
-body.loaded .title:after {
+body.loaded .header.title:after {
   opacity: .2;
 }
 
@@ -26,7 +26,7 @@ body.loaded .title:after {
 .header.title:after {
   width: 100%;
   height: 100%;
-  background: #2196f3;
+  background: #1e88e5;
   display: block;
   content: ' ';
   position: absolute;
@@ -53,7 +53,8 @@ body.loaded .title:after {
   }
 
 .logo {
-  height: 150px;
+  width: 400px;
+  padding: 1em 0;
   margin: 0 auto;
 }
 
@@ -87,7 +88,7 @@ body.loaded .title:after {
 
 
 .content {
-  background: #424242;
+  background: rgba(255,234,0,.2);
   height: 100%;
   width: auto;
 }
@@ -129,7 +130,7 @@ body.loaded .title:after {
     .staff .sub.header .title {
       text-transform: uppercase;
       font-style: italic;
-      color: #039be5;
+      color: #1e88e5;
       font-weight: 300;
       font-size: 12px;
     }
@@ -141,7 +142,7 @@ body.loaded .title:after {
   }
 
   .staff .links i:hover {
-    color: #FFD740;
+    color: #ffd600;
   }
 
 .item > .row {
@@ -219,24 +220,28 @@ body.loaded .title:after {
 
 footer.page-footer {
   margin-top: 0;
-  background: #2196f3;
+  background: #424242;
+}
+
+footer.page-footer .footer-copyright {
+  background-color: rgba(51,51,51,0.2);
 }
 
 .tabs {
-  margin-top: -1em;
-  background-color: #2196F3;
+  margin-top: -15px;
+  background-color: #1e88e5;
 }
 
   .tabs .tab a:hover {
-    color: #FFECA3;
+    color: #ffff00;
   }
 
 .tabs .indicator {
-  background-color: #FFD740;
+  background-color: #ffea00;
 }
 
   .tabs .tab a {
-    color: #FFD740;
+    color: #ffea00;
   }
 
 @media only screen and (max-width: 601px) {
