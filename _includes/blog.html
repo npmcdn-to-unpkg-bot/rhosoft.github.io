@@ -1,0 +1,34 @@
+{% assign no_posts = true %}
+{% for post in site.posts %}
+<div class="row">
+  <div class="col s12 m12 l8 center-card">
+    <div class="card">
+      <div class="card-image">
+        <div class="date">
+          {{ post.date | date: "%d" }}
+          <span>{{ post.date | date: "%B" }}</span>
+        </div>
+      </div>
+      <div class="card-sub">
+        <div class="card-content">
+          <span class="card-title">{{ post.title }}</span>
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="{{ post.url }}">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% assign no_posts = false %}
+{% endfor %}
+
+{% if no_posts %}
+<div class="row">
+  <div class="col s12 m12 l8 center-card">
+    <h4 style="color: #fff; text-align: center; font-weight: 300">No Posts!</h4>
+  </div>
+</div>
+{% endif %}

@@ -1,0 +1,11 @@
+# Site settings
+title: Rhosoft
+description: >
+  The Official Rhosoft Website
+
+collections:
+  - staff
+  - projects
+
+# Build settings
+markdown: kramdown

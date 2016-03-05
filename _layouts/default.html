@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rhosoft</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/assets/css/materialize.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body style='background-image: url(/assets/images/bg.jpg)'>
+      {% include header.html %}
+      {{ content }}
+      {% include footer.html %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="/assets/js/imageload.js"></script>
+    <script src="/assets/js/typed.min.js"></script>
+    <script src="/assets/js/materialize.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('body')
+          .css('background-image','url(assets/images/bg.jpg)')
+          .waitForImages(function() {
+            $(this).addClass('loaded');
+        }, $.noop, true);
+        $(".typed").typed({
+          strings: ["We Make Web Applications", "Cool Websites for Cool People", "Fun Projects!", "and A Few Other Things Sometimes"],
+          typeSpeed: 100,
+          startDelay: 500,
+          backSpeed: 50,
+          backDelay: 1500,
+        });
+      });
+    </script>
+  </body>
+</html>

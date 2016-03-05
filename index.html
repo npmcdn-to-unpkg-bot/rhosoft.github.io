@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<main class="content">
+  <div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="waves-effect tab col s3"><a class="active" href="#staff">People</a></li>
+        <li class="waves-effect tab col s3"><a href="#projects">Projects</a></li>
+        <li class="waves-effect tab col s3"><a href="#blog">Blog</a></li>
+      </ul>
+    </div>
+    <div id="staff" class="col s12 item">
+      {% include staff.html %}
+    </div>
+    <div id="projects" class="col s12 item">
+      {% include projects.html %}
+    </div>
+    <div id="blog" class="col s12 item">
+      {% include blog.html %}
+    </div>
+  </div>
+</main>

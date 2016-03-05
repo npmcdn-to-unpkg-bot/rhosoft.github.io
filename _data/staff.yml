@@ -1,0 +1,17 @@
+- name: "Gareth Daunton"
+  title: "Front-end Engineer"
+  links:
+    - icon: "public"
+      href: "http://garethdaunton.com"
+    - icon: "mail"
+      href: "mailto:gareth@rhosoft.co"
+  description: "This is a description"
+  image: "/assets/images/gareth.jpg"
+
+- name: "Jacob Bigenwald"
+  title: "Back-end Engineer"
+  links:
+    - icon: "mail"
+      href: "mailto:jacob@rhosoft.co"
+  description: "This is a description"
+  image: "/assets/images/jake.jpg"

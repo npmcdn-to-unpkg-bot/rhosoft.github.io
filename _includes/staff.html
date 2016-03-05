@@ -1,0 +1,26 @@
+<div class="row">
+  {% for staff in site.data.staff %}
+  <div class="col s12 m6 l3 staff center-card">
+    <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="{{staff.image}}">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">{{staff.name}}<i class="material-icons right">more_vert</i></span>
+        <div class="sub header">
+          <p class="title">{{staff.title}}</p>
+          <p class="links">
+            {% for link in staff.links %}
+            <a href="{{link.href}}"><i class="small material-icons">{{link.icon}}</i></a>
+            {% endfor %}
+          </p>
+        </div>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Who dis?<i class="material-icons right">close</i></span>
+        <p>{{staff.description}}</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
