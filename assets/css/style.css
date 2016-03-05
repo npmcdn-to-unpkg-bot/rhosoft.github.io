@@ -94,6 +94,10 @@ body.loaded .header.title:after {
   width: auto;
 }
 
+.tab_wrapper {
+  padding: 0 1rem;
+}
+
 .item {
   margin-top: 1em;
   text-align: left;
@@ -173,7 +177,7 @@ body.loaded .header.title:after {
     position: relative;
   }
     #blog .card .date {
-      display: inline-box;
+      display: inline-block;
       display: -moz-inline-box;
       display: -webkit-inline-box;
       display: -ms-inline-box;
@@ -259,5 +263,9 @@ footer.page-footer .footer-copyright {
 @media only screen and (max-width: 601px) {
   #blog .card {
     flex-direction: column;
+  }
+
+  .tab_wrapper {
+    padding: 0;
   }
 }
