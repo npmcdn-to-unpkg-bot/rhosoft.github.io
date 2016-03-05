@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="/assets/css/materialize.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
-  <body style='background-image: url(/assets/images/bg.jpg)'>
+  <body>
+      <div class="background"></div>
       {% include header.html %}
       {{ content }}
       {% include footer.html %}
@@ -17,10 +18,10 @@
     <script src="/assets/js/materialize.js"></script>
     <script>
       $(document).ready(function(){
-        $('body')
+        $('.background')
           .css('background-image','url(assets/images/bg.jpg)')
           .waitForImages(function() {
-            $(this).addClass('loaded');
+            $('body').addClass('loaded');
         }, $.noop, true);
         $(".typed").typed({
           strings: ["We Make Web Applications", "Cool Websites for Cool People", "Fun Projects!", "and A Few Other Things Sometimes"],
