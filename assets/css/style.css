@@ -261,6 +261,10 @@ footer.page-footer .footer-copyright {
   }
 
 @media only screen and (max-width: 601px) {
+  body {
+    background-attachment: scroll;
+  }
+
   #blog .card {
     flex-direction: column;
   }
