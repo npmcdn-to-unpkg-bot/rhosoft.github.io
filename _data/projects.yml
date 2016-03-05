@@ -2,3 +2,5 @@
   description: "Coming Soon"
   link: ""
   image: "/assets/images/rcb.jpg"
+  color: "#fff"
+  background: "#0C589A"
