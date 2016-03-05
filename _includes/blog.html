@@ -4,19 +4,20 @@
   <div class="col s12 m12 l8 center-card">
     <div class="card">
       <div class="card-image">
-        <div class="date">
-          {{ post.date | date: "%d" }}
-          <span>{{ post.date | date: "%B" }}</span>
+        <div class="date_wrapper">
+          <div class="date">
+            {{ post.date | date: "%b" }}
+            <span>{{ post.date | date: "%d" }}</span>
+          </div>
         </div>
       </div>
       <div class="card-sub">
         <div class="card-content">
           <span class="card-title">{{ post.title }}</span>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          {{ post.excerpt }}
         </div>
         <div class="card-action">
-          <a href="{{ post.url }}">Read More</a>
+          <a class="waves-effect waves-blue btn-flat" onClick="openPost('{{ post.url }}', '{{ post.title }}')">Read More</a>
         </div>
       </div>
     </div>
@@ -32,3 +33,26 @@
   </div>
 </div>
 {% endif %}
+
+<div id="dialog" class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <h4 id="post_title"></h4>
+    <div id="content">
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a class="modal-action modal-close waves-effect waves-blue btn-flat">Close</a>
+  </div>
+</div>
+
+<script>
+  function openPost(url, title) {
+    $.ajax({
+      url: url
+    }).done(function(html) {
+      $('#post_title').html(title);
+      $('#content').html(html);
+      $('#dialog').openModal();
+    });
+  }
+</script>
