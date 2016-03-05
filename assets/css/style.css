@@ -95,7 +95,7 @@ body.loaded .header.title:after {
 }
 
 .tab_wrapper {
-  padding: 0 1rem;
+  padding: 0 1rem!important;
 }
 
 .item {
@@ -266,6 +266,6 @@ footer.page-footer .footer-copyright {
   }
 
   .tab_wrapper {
-    padding: 0;
+    padding: 0!important;
   }
 }
