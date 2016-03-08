@@ -1,6 +1,6 @@
-<div class="row">
+<div id="masonry" class="row">
   {% for project in site.data.projects %}
-  <div class="col s12 m6 l4 center-card">
+  <div class="col s12 m6 l4 center-card project">
     <div class="card" style="background-color: {{ project.background }}; color: {{ project.color }}">
       <div class="card-image">
         <img src="{{project.image}}">
@@ -10,7 +10,7 @@
         <p>{{project.description}}</p>
       </div>
       <div class="card-action">
-        <a href="{{project.link}}">View</a>
+        <a style="color: {{ project.color }};" href="{{project.link}}">View</a>
       </div>
     </div>
   </div>

@@ -16,6 +16,13 @@
     <script src="/assets/js/imageload.js"></script>
     <script src="/assets/js/typed.min.js"></script>
     <script src="/assets/js/materialize.js"></script>
+    <script src="https://npmcdn.com/masonry-layout@4.0.0/dist/masonry.pkgd.min.js"></script>
+    <script>
+      var grid = $('#masonry');
+      $(grid).masonry({
+        itemSelector: '.project'
+      });
+    </script>
     <script>
       $(document).ready(function(){
         $('.background')

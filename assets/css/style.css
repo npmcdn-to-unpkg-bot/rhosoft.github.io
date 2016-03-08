@@ -232,10 +232,14 @@ body.loaded .header.title:after {
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
   color: #2196F3;
+  opacity: .5;
+  -webkit-transition: opacity .25s;
+  transition: opacity .25s;
 }
 
   .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover {
     color: #76C2FF;
+    opacity: .8;
   }
 
 footer.page-footer {
