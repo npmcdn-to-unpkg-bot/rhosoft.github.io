@@ -4,7 +4,6 @@
     <title>Rhosoft</title>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.8/jquery.fullPage.min.css"/>
     <link rel="stylesheet" href="/assets/css/materialize.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
@@ -17,28 +16,7 @@
     <script src="/assets/js/typed.min.js"></script>
     <script src="/assets/js/materialize.js"></script>
     <script src="https://npmcdn.com/masonry-layout@4.0.0/dist/masonry.pkgd.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.8/jquery.fullPage.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        $('.background')
-          .css('background-image','url(assets/images/bg.jpg)')
-          .waitForImages(function() {
-            $('body').addClass('loaded');
-        }, $.noop, true);
-        $(".typed").typed({
-          strings: ["We Make Web Applications", "Cool Websites for Cool People", "Fun Projects!", "and A Few Other Things Sometimes"],
-          typeSpeed: 100,
-          startDelay: 500,
-          backSpeed: 50,
-          backDelay: 1500,
-        });
-        // $(".slick-slider").slick({
-        //   arrows: false,
-        //   infinite: false,
-        //   slide: '.item',
-        //   slidesToShow: 1,
-        // });
-      });
-    </script>
+    <script src="https://cdn.rawgit.com/meetselva/attrchange/master/js/attrchange.js"></script>
+    <script src="/assets/js/index.js"></script>
   </body>
 </html>
