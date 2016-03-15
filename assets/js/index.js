@@ -16,8 +16,7 @@ $(document).ready(function(){
       trackValues: true, // set to true so that the event object is updated with old & new values
       callback: function(evnt) {
         if(evnt.attributeName == "style") { // which attribute you want to watch for changes
-          if(evnt.newValue.search(/flex/i) == 9) {
-            console.log("changed");
+          if(evnt.newValue.search(/flex/i) > 0) {
             background.addClass('home');
             background.removeClass('staff');
             background.removeClass('blog');
@@ -30,7 +29,7 @@ $(document).ready(function(){
     trackValues: true, // set to true so that the event object is updated with old & new values
     callback: function(evnt) {
       if(evnt.attributeName == "style") { // which attribute you want to watch for changes
-        if(evnt.newValue.search(/flex/i) == 9) {
+        if(evnt.newValue.search(/flex/i) > 0) {
           background.removeClass('home');
           background.addClass('staff');
           background.removeClass('blog');
@@ -43,7 +42,7 @@ $(document).ready(function(){
     trackValues: true, // set to true so that the event object is updated with old & new values
     callback: function(evnt) {
       if(evnt.attributeName == "style") { // which attribute you want to watch for changes
-        if(evnt.newValue.search(/flex/i) == 9) {
+        if(evnt.newValue.search(/flex/i) > 0) {
           background.removeClass('home');
           background.removeClass('staff');
           background.addClass('blog');
@@ -56,7 +55,7 @@ $(document).ready(function(){
     trackValues: true, // set to true so that the event object is updated with old & new values
     callback: function(evnt) {
       if(evnt.attributeName == "style") { // which attribute you want to watch for changes
-        if(evnt.newValue.search(/flex/i) == 9) {
+        if(evnt.newValue.search(/flex/i) > 0) {
           background.removeClass('home');
           background.removeClass('staff');
           background.removeClass('blog');
