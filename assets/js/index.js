@@ -5,11 +5,12 @@ $(document).ready(function(){
       $('body').addClass('loaded');
   }, $.noop, true);
   $(".typed").typed({
-    strings: ["We Make Web Applications", "Cool Websites for Cool People", "Fun Projects!", "and A Few Other Things Sometimes"],
+    strings: ["Great Web Applications", "Cool Websites", "Fun Projects", "Awesome People"],
     typeSpeed: 100,
     startDelay: 500,
     backSpeed: 50,
     backDelay: 1500,
+    loop: true,
   });
   var background = $('.content');
   $("#home").attrchange({
