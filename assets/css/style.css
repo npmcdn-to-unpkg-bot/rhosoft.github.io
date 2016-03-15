@@ -1,5 +1,36 @@
-body.loaded .header.title:after {
+html {
+  height: 100%;
+}
+
+body.loaded .item:after {
   opacity: .2;
+}
+
+body {
+  height:100%;
+}
+
+.content {
+  min-height: calc(100vh - 70px);
+  margin-bottom: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+}
+
+.row .item.col {
+  padding: 0;
+  margin: 0;
+  flex: 1 1 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+
+.content-wrapper {
+
 }
 
 .background {
@@ -14,8 +45,7 @@ body.loaded .header.title:after {
 }
 
 .header.title {
-  height: 100vh;
-  min-height: 100%;
+  height: 100%;
   width: 100%;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -27,19 +57,36 @@ body.loaded .header.title:after {
   font-weight: 100;
 }
 
-.header.title:after {
+.item:after {
   width: 100%;
   height: 100%;
-  background: #1e88e5;
+  min-height: 100vh;
+  margin-top: -48px;
   display: block;
   content: ' ';
   position: absolute;
-  z-index: 0;
+  z-index: -1;
   top: 0;
   left: 0;
   opacity: 1;
   -webkit-transition: opacity 2s;
   transition: opacity 2s;
+}
+
+#home.item:after {
+  background: #1e88e5;
+}
+
+#blog.item:after {
+  background: #FFEA00;
+}
+
+#projects.item:after {
+  background: #fb8c00;
+}
+
+#staff.item:after {
+  background: #5e35b1;
 }
 
   .header.title > * {
@@ -91,20 +138,26 @@ body.loaded .header.title:after {
     100% { opacity:1; }
 }
 
-
-.content {
-  background: rgba(255,234,0,.2);
-  height: 100%;
-  width: auto;
-}
-
 .tab_wrapper {
   padding: 0 1rem!important;
 }
 
 .item {
-  margin-top: 1em;
   text-align: left;
+  position: relative;
+}
+
+.slick-list {
+  width: 100%;
+  height: 100%;
+}
+
+.slick-track {
+  height: 100%;
+}
+
+.slick-initialized .slick-slide {
+  /*display: block!important;*/
 }
 
 .staff {
@@ -160,6 +213,7 @@ body.loaded .header.title:after {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .center-card {
@@ -252,7 +306,6 @@ footer.page-footer .footer-copyright {
 }
 
 .tabs {
-  margin-top: -15px;
   background-color: #1e88e5;
 }
 
