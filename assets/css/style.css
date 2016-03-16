@@ -306,6 +306,7 @@ footer.page-footer .footer-copyright {
 
 .tabs {
   background-color: #1e88e5;
+  overflow: visible;
 }
 
   .tabs .tab a:hover {
