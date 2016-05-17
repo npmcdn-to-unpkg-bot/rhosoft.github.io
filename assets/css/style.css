@@ -1,5 +1,7 @@
 html {
   height: 100%;
+  background: #3a546b;
+  overflow-x: hidden;
 }
 
 body.loaded .content:after {
@@ -248,7 +250,7 @@ footer.page-footer .footer-copyright {
   .background {
     background-attachment: scroll;
   }
-  
+
   .tab_wrapper {
     padding: 0!important;
   }
