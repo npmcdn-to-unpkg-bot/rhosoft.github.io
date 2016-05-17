@@ -147,19 +147,6 @@ body {
   position: relative;
 }
 
-.slick-list {
-  width: 100%;
-  height: 100%;
-}
-
-.slick-track {
-  height: 100%;
-}
-
-.slick-initialized .slick-slide {
-  /*display: block!important;*/
-}
-
 .staff {
   margin-left: 0!important;
 }
@@ -219,70 +206,6 @@ body {
   margin: 0!important;
 }
 
-#blog .card {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: transparent;
-  box-shadow: none;
-}
-
-  #blog .card .date_wrapper {
-    background: #3f51b5;
-    height: 200px;
-    min-width: 200px;
-    position: relative;
-  }
-    #blog .card .date {
-      display: inline-block;
-      display: -moz-inline-box;
-      display: -webkit-inline-box;
-      display: -ms-inline-box;
-      position: absolute;
-      text-align: right;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-weight: 300;
-      font-size: 60px;
-      color: #fff;
-      line-height: 1;
-    }
-
-    #blog .card .card-image span {
-      font-weight: 100;
-      font-size: 50px;
-    }
-
-  #blog .card .card-sub .card-title, #blog .modal-content #post_title {
-    color: #3f51b5;
-    font-style: italic;
-  }
-
-  #blog .card .card-action a {
-    color: #3f51b5;
-    padding: 0 .25em;
-  }
-
-  #blog .card .card-action a:hover {
-    color: #707ECE;
-  }
-
-  #blog .card .card-sub {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    background-color: #fff;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    width: 100%;
-  }
-
-  #blog .card .card-action {
-    padding: 10px 20px;
-  }
-
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
   color: #2196F3;
   opacity: .5;
@@ -322,10 +245,10 @@ footer.page-footer .footer-copyright {
   }
 
 @media only screen and (max-width: 601px) {
-  #blog .card {
-    flex-direction: column;
+  .background {
+    background-attachment: scroll;
   }
-
+  
   .tab_wrapper {
     padding: 0!important;
   }
