@@ -249,6 +249,7 @@ footer.page-footer .footer-copyright {
 @media only screen and (max-width: 601px) {
   .background {
     background-attachment: scroll;
+    position: absolute;
   }
 
   .tab_wrapper {
